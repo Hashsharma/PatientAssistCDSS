@@ -14,8 +14,8 @@ from langchain_core.documents import Document
 
 # Load environment variables
 load_dotenv()
-MINIML_MODEL_PATH = os.getenv("MINIML_MODEL_PATH")
-MODEL_RERANK = os.getenv("MODEL_RERANK")
+MINIML_MODEL_PATH = os.getenv("MINIML_MODEL_PATH")  ## all-MiniLM-L6-v2-original
+MODEL_RERANK = os.getenv("MODEL_RERANK")  ## bge-reranker-base
 
 # Initialize HuggingFace embeddings
 embeddings = HuggingFaceEmbeddings(model_name=MINIML_MODEL_PATH)

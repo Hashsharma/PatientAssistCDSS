@@ -3,9 +3,13 @@ import time
 from langchain_core.prompts import ChatPromptTemplate
 from .retrieval import retrieve_and_rerank
 from .guardrails import check_output_safety
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+LMSTUDIO_API_URL = os.getenv("MODEL_API_URL")
 
 # Local LMStudio API Configuration - Fixed endpoints
-LMSTUDIO_API_URL = "http://localhost:1234/v1/completions"  # Fixed: added /v1/
 # No API key needed for local LMStudio
 
 TEMPLATE = """
