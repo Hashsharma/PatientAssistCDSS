@@ -9,7 +9,7 @@ st.markdown("**⚠️ Research Prototype. Do not use for real patient care.**")
 with st.sidebar:
     st.header("Patient Context")
     patient_id = st.text_input("Patient ID", value="P-12345")
-    st.info("System runs locally. No data leaves this machine.")
+    st.info("System running locally. No data leaves this machine.")
 
 query = st.text_area("Clinical Query", placeholder="e.g., What is the current HbA1c level and medication status?")
 
