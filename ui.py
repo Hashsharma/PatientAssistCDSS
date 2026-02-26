@@ -11,7 +11,7 @@ with st.sidebar:
     patient_id = st.text_input("Patient ID", value="P-12345")
     st.info("System running locally. No data leaves this machine.")
 
-query = st.text_area("Clinical Query", placeholder="e.g., What is the current HbA1c level and medication status?")
+query = st.text_area("Clinical Query", placeholder="Type your clinical query (diagnosis, treatment, guidelines, drug dosing, etc.)")
 
 if st.button("Analyze EHR"):
     if not query:
