@@ -15,7 +15,7 @@ print("backend url", BACKEND_URL)
 
 with st.sidebar:
     st.header("Patient Context")
-    patient_id = st.text_input("Patient ID", value="P-12345")
+    patient_id = st.text_input("Patient ID", value="P-123456")
     st.info("System running locally. No data leaves this machine.")
     st.caption(f"Connected to: {BACKEND_URL}")
 
