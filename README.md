@@ -137,7 +137,7 @@ streamlit run ui.py
 ## 🔒 Security & Privacy Notes
 
 *   **No Authentication:** This prototype excludes authentication layers for simplicity. **Do not expose this API to the public internet.**
-*   **PHI Detection:** The guardrail service uses regex patterns to detect potential SSNs or IDs. This is not foolproof; do not rely on it for HIPAA compliance.
+*   **PHI Detection:** The guardrail service uses regex patterns to detect potential SSNs or IDs. This is not foolproof; it does not rely on it for HIPAA compliance.
 *   **Data Residency:** All data (vectors, logs, models) resides locally on your machine.
 *   **Audit Trail:** All interactions are appended to `data/audit_logs.jsonl`. Do not delete this file if compliance tracking is required.
 
