@@ -30,7 +30,7 @@ def setup_retriever():
 
         # Mock data to be written to the file
         mock_data = [
-            {"type": "Condition", "content": "Patient has Type 2 Diabetes, diagnosed 2020."},
+            {"type": "Condition", "content": "Patient has Type 2 Diabetes, diagnosed 2025."},
             {"type": "Medication", "content": "Prescribed Metformin 500mg BID."},
             {"type": "Lab", "content": "HbA1c level 7.5% recorded last month."}
         ]
